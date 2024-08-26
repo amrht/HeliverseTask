@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  padding: 20px;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.user-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  align-self: center;
+  margin: 0 10px;
+}
+
+.filters {
+  margin:10px;
+}
+
+.filters select,
+.filters label {
+  margin-right: 10px;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.team-creator {
+  margin-top: 20px;
+}
+
+.user-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-select input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Team details styling */
+.team-details {
+  margin-top: 20px;
+}
+
+.team-member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.team-member p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.selected-cards {
+  margin-top: 20px;
+}
+
+.selected-cards ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-cards li {
+  margin: 5px 0;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

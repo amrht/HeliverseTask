@@ -1,0 +1,144 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.create-team-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-team-button:hover {
+    background-color: #0056b3;
+}
+
+.user-list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow outside the popup */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh; 
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close-popup-button:hover {
+    background: #c82333;
+}
+
+.selected-users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.create-team-action-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-team-action-button:hover {
+    background-color: #218838;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .create-team-button {
+        margin-top: 10px;
+    }
+
+    .user-list {
+        flex-direction: column;
+    }
+
+    .popup-content {
+        width: 100%;
+        padding: 10px;
+        max-width: none;
+    }
+
+    .close-popup-button {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-team-button,
+    .create-team-action-button {
+        padding: 8px 16px;
+    }
+
+    .popup-content {
+        padding: 5px;
+    }
+
+    .selected-users-list {
+        gap: 5px;
+    }
+}
