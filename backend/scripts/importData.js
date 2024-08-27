@@ -1,9 +1,16 @@
 const { MongoClient } = require('mongodb');
 const fs = require('fs');
+const { ServerApiVersion } = require('mongodb');
 
 
-const uri = 'mongodb://localhost:27017';
-const client = new MongoClient(uri);
+const uri = 'mongodb+srv://arhayat7:UDNhuMzrHvsr3IeV@cluster0.jpujb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const client = new MongoClient(uri,{
+    serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+    },
+});
 
 async function updateDatabase() {
     try {
