@@ -10,7 +10,7 @@ const Teams = () => {
     useEffect(() => {
         const fetchTeams = async () => {
             try {
-                const response = await fetch('http://localhost:1337/api/teams');
+                const response = await fetch('https://heliversetask-r1fg.onrender.com/api/teams');
                 const data = await response.json();
                 setTeams(data);
             } catch (error) {

@@ -71,7 +71,7 @@ const UserList = () => {
         try {
             setLoading(true);
             console.log('Posting data to /api/teams:', newTeam);
-            const response = await axios.post('http://localhost:1337/api/teams', newTeam);
+            const response = await axios.post('https://heliversetask-r1fg.onrender.com/api/teams', newTeam);
 
             if (response.status === 201) {
                 console.log('Team created successfully:', response.data);

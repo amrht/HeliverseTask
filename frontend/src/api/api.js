@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:1337/api';
+const API_URL = 'https://heliversetask-r1fg.onrender.com/api';
 
 export const fetchUsers = async (page = 1, search = '', filters = {}) => {
     try {
