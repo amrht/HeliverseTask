@@ -4,7 +4,7 @@ const { ServerApiVersion } = require('mongodb');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://arhayat7:UDNhuMzrHvsr3IeV@cluster0.jpujb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
+        await mongoose.connect('mongodb+srv://arhayat7:UDNhuMzrHvsr3IeV@cluster0.jpujb.mongodb.net/express-mongo-crud?retryWrites=true&w=majority&appName=Cluster0',{
             serverApi: {
                 version: ServerApiVersion.v1,
                 strict: true,
