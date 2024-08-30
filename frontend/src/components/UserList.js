@@ -129,6 +129,7 @@ const UserList = () => {
                 </button>
                 </div>
             </div>
+            <h2 style={{textAlign:'center'}}>Click the card to select</h2>
             <div className="user-list">
                 {users.length > 0 ? (
                     users.map(user => (
